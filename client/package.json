@@ -15,6 +15,7 @@
     "core-js": "^2.6.5",
     "epic-spinners": "^1.1.0",
     "lodash": "^4.17.14",
+    "lodash.defaultsdeep": "^4.6.1",
     "sweetalert2": "^8.13.4",
     "vue": "^2.6.10",
     "vue-ctk-date-time-picker": "^2.1.1",
