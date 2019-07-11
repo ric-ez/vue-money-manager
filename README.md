@@ -1,4 +1,4 @@
-# client
+# Vue Money Manager
 
 ## Project setup
 ```
