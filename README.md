@@ -9,7 +9,13 @@ cd client
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### MongoDB Setup
+```
+replace "your_mongodb_connection_url" with your mongodb url connection 
+in server/routes/api/expenses.js and server/routes/api/income.js 
+```
+
+### Run
 ```
 npm run dev
 ```
@@ -22,16 +28,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
