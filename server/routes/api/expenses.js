@@ -3,13 +3,13 @@ const mongodb = require('mongodb')
 
 const router = express.Router()
 
-// Get Posts
+// Get expenses / pengeluaran
 router.get('/', async (req, res) => {
     const expenses = await loadExpenses()
     res.send(await expenses.find({}).toArray())
 }) 
 
-// Add Posts
+// Create expenses / pengeluaran
 router.post('/', async (req, res) => {
     const expenses = await loadExpenses()
     await expenses.insertOne({
@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
     res.status(201).send()
 }) 
 
-// Update Posts
+// Update expenses / pengeluaran
 router.put('/:id', async (req, res) => {
     const expenses = await loadExpenses()
     await expenses.updateOne(
@@ -40,7 +40,7 @@ router.put('/:id', async (req, res) => {
     res.status(200).send()
 }) 
 
-// Delete Posts
+// Delete expenses / pengeluaran
 router.delete('/:id', async (req, res) => {
     const expenses = await loadExpenses()
     await expenses.deleteOne({
@@ -49,12 +49,14 @@ router.delete('/:id', async (req, res) => {
     res.status(200).send()
 }) 
 
+// Replace your_mongodb_connection_url with yours
 async function loadExpenses(){
     const client = await mongodb.MongoClient.connect
     ('your_mongodb_connection_url', {
             useNewUrlParser: true
     })
 
+    // Replace money_manager with your mongodb database name
     return client.db('money_manager').collection('expenses')
 }
 
