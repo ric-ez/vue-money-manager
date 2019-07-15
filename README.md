@@ -12,11 +12,9 @@ npm install
 ### MongoDB Setup
 ```
 replace "your_mongodb_connection_url" with your mongodb url connection 
-in server/routes/api/expenses.js and server/routes/api/income.js 
-```
-```
-replace "money_manager" with your mongodb database name
-in server/routes/api/expenses.js and server/routes/api/income.js 
+and also replace "money_manager" with your mongodb database name
+
+in server/routes/api/expenses.js and income.js
 ```
 
 ### Run
