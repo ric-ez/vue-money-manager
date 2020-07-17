@@ -14,7 +14,7 @@
     "bootstrap-vue": "^2.0.0-rc.25",
     "core-js": "^2.6.5",
     "epic-spinners": "^1.1.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "lodash.defaultsdeep": "^4.6.1",
     "sweetalert2": "^8.13.4",
     "vue": "^2.6.10",
